@@ -3,11 +3,11 @@ from setuptools import setup
 
 setup(
     name='python-binance',
-    version='0.7.9',
+    version='0.0.1',
     packages=['binance'],
     description='Binance REST API python implementation',
-    url='https://github.com/sammchardy/python-binance',
-    author='Sam McHardy',
+    url='https://github.com/pvys/python-binance',
+    author='pvys',
     license='MIT',
     author_email='',
     install_requires=['requests', 'six', 'Twisted', 'pyOpenSSL', 'autobahn', 'service-identity', 'dateparser',

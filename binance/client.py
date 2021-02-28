@@ -1996,6 +1996,12 @@ class Client(object):
             raise BinanceWithdrawException(res['msg'])
         return res
 
+    def get_wallet_status(self, **params):
+        """
+        거래소 지갑의 모든 코인 정보(입출금 현황 포함)을 가져옴
+        """
+        return self._request_margin_api('get', 'capital/config/getall', True, data=params)
+
     def transfer_dust(self, **params):
         """Convert dust assets to BNB.
 
